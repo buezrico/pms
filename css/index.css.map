@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAGA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,kBAAkB;CAChC",
     "sources": [
         "index.scss",
-        "_variables.scss"
+        "_variables.scss",
+        "../assets/fonts/Lato-Regular.ttf"
     ],
     "names": [],
     "file": "index.css"
