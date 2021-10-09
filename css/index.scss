@@ -135,16 +135,29 @@ header {
             padding: 0.5em;
             outline: none;
             border: 1px solid $success;
-            color: $primary;
+            color: $secondary;
+            border-radius: 0.5em;
+            transition: all 0.15s ease-in-out;
 
             &::placeholder {
               color: $secondary;
               font-size: 0.7em;
             }
 
-            &:nth-child(2) {
-              border-bottom: 0;
+            &:focus {
+              border: 2px solid $danger;
             }
+
+            &:nth-child(3) {
+              position: relative;
+            }
+          }
+
+          .password-toggle {
+            position: absolute;
+            margin-top: 8em;
+            margin-left: 10em;
+            cursor: pointer;
           }
 
           small {

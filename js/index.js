@@ -12,3 +12,14 @@ signInBtn.addEventListener("click", () => {
   login.classList.add("login-modal-toggle");
   header.classList.add("login-modal-coming");
 });
+
+const password = document.querySelector(".password");
+const passwordToggle = document.querySelector(".password-toggle");
+
+passwordToggle.addEventListener("click", () => {
+  const type =
+    password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+
+  passwordToggle.classList.toggle("fa-eye-slash");
+});

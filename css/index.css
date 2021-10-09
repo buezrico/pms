@@ -179,7 +179,10 @@ header .login-modal .inner form .form input {
   padding: 0.5em;
   outline: none;
   border: 1px solid #a77171;
-  color: #de5d5d;
+  color: #a65858;
+  border-radius: 0.5em;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 header .login-modal .inner form .form input::-webkit-input-placeholder {
@@ -202,8 +205,19 @@ header .login-modal .inner form .form input::placeholder {
   font-size: 0.7em;
 }
 
-header .login-modal .inner form .form input:nth-child(2) {
-  border-bottom: 0;
+header .login-modal .inner form .form input:focus {
+  border: 2px solid #820808;
+}
+
+header .login-modal .inner form .form input:nth-child(3) {
+  position: relative;
+}
+
+header .login-modal .inner form .form .password-toggle {
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 10em;
+  cursor: pointer;
 }
 
 header .login-modal .inner form .form small {

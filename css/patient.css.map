@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "patient.scss",
+        "_variables.scss",
+        "../assets/fonts/Lato-Regular.ttf"
+    ],
+    "names": [],
+    "file": "patient.css"
+}
