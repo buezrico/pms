@@ -8,17 +8,97 @@
 
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header>
-      <nav class="nav">
+    <header class="header">
+      <nav class="nav container">
         <div class="brand">
-          <img src="/assets/imgs/logo.png" alt="logo" />
-          <a href="#">Patient Management System</a>
+          <a href="/index.html"
+            ><img src="/assets/imgs/logo.png" alt="logo"
+          /></a>
+          <a href="/index.html" class="text-danger"
+            >Patient Management System</a
+          >
         </div>
+
+        <ul class="navbar">
+          <li class="nav-item">
+            <a href="" class="nav-link">Top Features</a>
+            <i class="fas fa-caret-down text-primary"></i>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Resources</a>
+            <i class="fas fa-caret-down text-primary"></i>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Pricing</a>
+            <i class="fas fa-caret-down text-primary"></i>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link btn btn-outline-primary rounded-pill px-5 login"
+            >
+              Login
+            </button>
+          </li>
+        </ul>
       </nav>
 
-      <main class="header"></main>
+      <div class="banner">
+        <div class="container">
+          <div class="inner">
+            <div class="left">
+              <p class="title text-danger">
+                YOUR ALL-IN-ONE PATIENT MANAGEMENT SOFTWARE
+              </p>
+              <p class="my-4 text-secondary">
+                Single, Powerful abd Easy to Use
+              </p>
+              <div class="banner-btn">
+                <button
+                  class="nav-link btn btn-primary rounded-pill px-5 sign-in"
+                >
+                  Sign In
+                </button>
+              </div>
+            </div>
+            <div class="right">
+              <img src="/assets/imgs/banner-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="login-modal">
+        <div class="inner">
+          <form action="">
+            <div class="form">
+              <h5 class="title fw-bold text-danger mb-5">SIGN IN</h5>
+              <input type="text" placeholder="User Name or Email" />
+              <input class="mb-4" type="password" placeholder="Password" />
+
+              <small class="mb-4">Forgot your password?</small>
+
+              <p class="mb-4"><i class="fas fa-toggle-off"></i> Remember Me</p>
+
+              <button
+                class="btn fw-bold btn-primary text-light rounded-pill w-100"
+              >
+                Sign In
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </header>
+
+    <script src="/js/index.js"></script>
   </body>
 </html>
