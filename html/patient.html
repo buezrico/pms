@@ -7,6 +7,7 @@
     <title>Patient Details</title>
 
     <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/patient.css" />
 
     <link
       rel="stylesheet"
@@ -16,6 +17,130 @@
     />
   </head>
   <body>
-    Patient Details
+    <header class="patient">
+      <div class="top">
+        <nav class="nav">
+          <div class="container inner">
+            <div class="brand">
+              <img src="/assets/imgs/logo-white.png" alt="logo" />
+              <p>Patient Information system</p>
+            </div>
+
+            <div class="user-profile">
+              <i class="fas fa-user-circle"></i>
+              <p class="fw-bold">Aliyu Maryam</p>
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </nav>
+
+        <div class="topbar">
+          <div class="container inner">
+            <div class="links text-danger">
+              <p>PATIENT INFO</p>
+              <p>PATIENT RECORD</p>
+            </div>
+            <div class="add-patient">
+              <button class="btn btn-outline-success rounded-pill px-4">
+                Add Patient
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <ul>
+          <li>
+            <i class="fas fa-user"></i>
+          </li>
+          <li>
+            <i class="fas fa-stethoscope"></i>
+          </li>
+          <li>
+            <i class="fas fa-procedures"></i>
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <div class="inner">
+          <div class="list">
+            <div class="search">
+              <p class="mb-2 fw-bold">Smart Lists</p>
+              <select class="mb-1 w-100">
+                <option value="0" default>All Patients</option>
+                <option value="1">Kidney</option>
+                <option value="2">Lungs</option>
+                <option value="3">Chest</option>
+              </select>
+              <i class="fas fa-search"></i>
+              <input type="search" class="w-100" placeholder="Search Names" />
+            </div>
+
+            <div class="patient-list">
+              <ul>
+                <li>
+                  <input type="checkbox " />
+                  <p>Name</p>
+                  <p>Phone</p>
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  <p>Aliyu Maryam</p>
+                  <p>09038583142</p>
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  <p>Aliyu Maryam</p>
+                  <p>09038583142</p>
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  <p>Aliyu Maryam</p>
+                  <p>09038583142</p>
+                </li>
+                <li class="bg-info">
+                  <input type="checkbox" />
+                  <p>Aliyu Maryam</p>
+                  <p>09038583142</p>
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  <p>Aliyu Maryam</p>
+                  <p>09038583142</p>
+                </li>
+                <li class="bg-info">
+                  <input type="checkbox" />
+                  <p>Aliyu Maryam</p>
+                  <p>09038583142</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="edit">
+              <button class="btn btn-primary rounded-pill text-light px-4 mx-2">
+                Add Patient
+              </button>
+
+              <button class="btn btn-outline-secondary rounded-pill px-4">
+                Remove Patient
+              </button>
+            </div>
+
+            <div class="display">
+              <p>Displaying 6 items</p>
+
+              <div class="count">
+                <p>10</p>
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="info">info</div>
+        </div>
+      </main>
+    </header>
   </body>
 </html>
