@@ -180,7 +180,6 @@ header .login-modal .inner form .form input {
   outline: none;
   border: 1px solid #a77171;
   color: #a65858;
-  border-radius: 0.5em;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }

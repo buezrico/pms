@@ -133,7 +133,7 @@ header {
             outline: none;
             border: 1px solid $success;
             color: $secondary;
-            border-radius: 0.5em;
+            // border-radius: 0.5em;
             transition: all 0.15s ease-in-out;
 
             &::placeholder {
