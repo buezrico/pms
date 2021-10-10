@@ -20,8 +20,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .patient .top nav .inner .brand {
@@ -29,8 +29,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .patient .top nav .inner .brand img {
@@ -55,8 +55,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 0.5em;
 }
 
@@ -65,8 +65,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 0.5em;
   font-size: 0.7em;
 }
@@ -80,8 +80,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .patient .top .topbar .inner .links {
@@ -97,8 +97,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   padding: 0.3em 1em;
   cursor: pointer;
 }
@@ -134,11 +134,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 1em;
   width: 100%;
 }
@@ -149,13 +149,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 1em;
   padding: 0.5em 0;
 }
@@ -265,8 +265,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
 }
 
@@ -312,11 +312,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 0.5em;
   border-top: 2px solid #de5d5d;
   border-bottom: 1px solid #de5d5d;
@@ -331,11 +331,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #820808;
   padding: 0 0.3em;
 }
@@ -351,8 +351,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 0.5em;
   border-left: 1px solid #de5d5d;
   cursor: pointer;
@@ -372,8 +372,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .patient main .inner .info nav ul {
@@ -420,15 +420,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .patient main .inner .info .details .profile-details ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .patient main .inner .info .details .profile-details .profile-pic {
@@ -437,11 +437,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .patient main .inner .info .details .profile-details .profile-pic img {
@@ -453,15 +453,15 @@
 .patient main .inner .info .details .guardian-details ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .patient main .inner .info .details .provider-details ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .patient main .inner .info .details .update-btn {
@@ -469,8 +469,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .patient main .inner .info .details .update-btn .btn {
@@ -480,4 +480,45 @@
 .patient main .inner .info .details .update-btn .btn:hover {
   color: #ffffff;
 }
+
+/* DRACO'S VITAL SIGNS CSS Starts Here */
+
+.waveform {
+  width: 606px;
+  height: 274px;
+  padding: 20px;
+  border: 2px dashed #390404;
+  margin-bottom: 1.25rem;
+}
+
+.ecg-waveform {
+  width: 566px;
+  height: 156px;
+  background-color: #820808;
+  padding: 20px 0px;
+}
+
+.waveform-btns {
+  width: 606px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vital-signs {
+  width: 459px;
+  height: 237px;
+  padding: 20px;
+  border: 2px dashed #820808;
+  margin-bottom: 1.25rem;
+  border;
+}
+
+.vital-signs-btns {
+  width: 459px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* DRACO'S VITAL SIGNS CSS Ends Here */
+
 /*# sourceMappingURL=patient.css.map */
