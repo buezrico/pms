@@ -41,7 +41,15 @@
               <p>PATIENT RECORD</p>
             </div>
             <div class="add-patient-btn">
-              <button class="btn btn-outline-success rounded-pill px-4">
+              <button
+                onclick="showNewPatientModal()"
+                class="
+                  btn btn-outline-success
+                  rounded-pill
+                  px-4
+                  new-patient-btn
+                "
+              >
                 Add Patient
               </button>
             </div>
@@ -488,7 +496,7 @@
         </div>
       </main>
 
-      <div class="add-patient"></div>
+      <div class="add-patient-modal"></div>
     </header>
 
     <script src="/js/patient.js"></script>

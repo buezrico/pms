@@ -412,7 +412,7 @@
     }
   }
 
-  .add-patient {
+  .add-patient-modal {
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -420,5 +420,12 @@
     top: 0;
     left: 0;
     z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  .add-patient-toggle {
+    visibility: visible;
+    opacity: 1;
   }
 }

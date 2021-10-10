@@ -23,3 +23,16 @@ const vitalSigns = () => {
   document.getElementById("medical-record").style.display = "none";
   document.getElementById("vital-signs").style.display = "block";
 };
+
+// const addPatientBtn = document.querySelector(".new-patient-btn");
+// const addPatientModal = document.querySelector(".add-patient-modal");
+
+// addPatientBtn.addEventListener("click", () => {
+//   addPatientModal.classList.add("add-patient-toggle");
+// });
+
+const showNewPatientModal = () => {
+  const addPatientModal = document
+    .querySelector(".add-patient-modal")
+    .classList.add("add-patient-toggle");
+};
