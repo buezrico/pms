@@ -1,0 +1,385 @@
+@import "./variables";
+@import "../assets/fonts/Lato-Regular.ttf";
+
+.patient {
+  .top {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    background: red;
+    nav {
+      background-color: $danger;
+      padding: 0.3em 0;
+      color: $light;
+
+      .inner {
+        display: flex;
+        justify-content: space-between;
+        .brand {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 2em;
+            margin-right: 0.5em;
+          }
+
+          p {
+            font-size: 0.8em;
+            font-weight: bold;
+          }
+        }
+
+        .user-profile {
+          display: flex;
+          cursor: pointer;
+
+          .fa-user-circle {
+            display: flex;
+            align-items: center;
+            margin-right: 0.5em;
+          }
+          p {
+            display: flex;
+            align-items: center;
+            margin-right: 0.5em;
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+
+    .topbar {
+      background-color: $info;
+      .inner {
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+          display: flex;
+          padding-left: 2em;
+
+          p {
+            font-size: 0.7em;
+            display: flex;
+            align-items: flex-end;
+            padding: 0.3em 1em;
+            cursor: pointer;
+
+            &:nth-child(1) {
+              margin-right: 3em;
+              border-bottom: 2px solid $danger;
+            }
+          }
+        }
+
+        .add-patient {
+          button {
+            font-size: 0.8em;
+            margin: 0.8em;
+
+            &:hover {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  aside {
+    height: 100vh;
+    width: 5%;
+    background-color: $warning;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid $primary;
+    padding-top: 8em;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 1em;
+      width: 100%;
+      li {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+        padding: 0.5em 0;
+
+        &:nth-child(1) {
+          background-color: $danger;
+
+          i {
+            border: 1px solid $light;
+            color: $danger;
+            background-color: $light;
+          }
+        }
+
+        i {
+          border: 1px solid $secondary;
+          padding: 0.3em;
+          color: $secondary;
+          border-radius: 0.2em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  main {
+    margin-left: 10%;
+    margin-right: 5%;
+
+    .inner {
+      display: flex;
+      padding-top: 2em;
+
+      .list {
+        position: fixed;
+        left: 10%;
+        width: 30%;
+        border: 1px solid $primary;
+
+        .search {
+          padding: 0.5em 1em;
+          color: $success;
+          border-bottom: 2px solid $primary;
+
+          p {
+            text-decoration: underline;
+            font-size: 0.8em;
+          }
+
+          select {
+            height: 3em;
+            font-size: 0.7em;
+            padding: 0.5em;
+            color: $success;
+            background-color: $warning;
+            outline: 0;
+            border: 1px solid $success;
+          }
+
+          input {
+            height: 3em;
+            font-size: 0.7em;
+            padding-left: 3em;
+            color: $success;
+            background-color: $warning;
+            outline: 0;
+            border: 1px solid $success;
+
+            &::placeholder {
+              color: $success;
+            }
+
+            &:focus {
+              background-color: transparent;
+            }
+          }
+          i {
+            position: absolute;
+            margin-left: 1em;
+            margin-top: 1em;
+            font-size: 0.7em;
+          }
+        }
+
+        .patient-list {
+          color: $danger;
+          ul {
+            li {
+              padding: 0.7em 1em;
+              display: flex;
+              align-items: center;
+              position: relative;
+
+              &:nth-child(1) {
+                border-bottom: 1px solid $dark;
+                background-color: $warning;
+
+                input {
+                  visibility: hidden;
+                }
+
+                p {
+                  font-weight: bold;
+                }
+              }
+
+              &:nth-child(3) {
+                background-color: $danger;
+                color: $light;
+              }
+
+              input {
+                font-size: 0.7em;
+                height: 0.8em;
+              }
+
+              p {
+                font-size: 0.7em;
+
+                &:nth-child(2) {
+                  position: absolute;
+                  left: 15%;
+                }
+                &:nth-child(3) {
+                  position: absolute;
+                  left: 50%;
+                }
+              }
+            }
+          }
+        }
+
+        .edit {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 0.5em;
+          border-top: 2px solid $primary;
+          border-bottom: 1px solid $primary;
+
+          button {
+            font-size: 0.7em;
+          }
+        }
+
+        .display {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          color: $danger;
+          padding: 0 0.3em;
+
+          p {
+            margin: 0.5em 0;
+            margin-right: 1em;
+            font-size: 0.7em;
+          }
+
+          .count {
+            display: flex;
+            align-items: center;
+            padding: 0 0.5em;
+            border-left: 1px solid $primary;
+
+            cursor: pointer;
+
+            i {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+
+      .info {
+        width: 100%;
+        margin-left: 40%;
+
+        nav {
+          display: flex;
+          justify-content: flex-end;
+
+          ul {
+            background-color: $info;
+            padding: 0;
+
+            li {
+              padding: 0.3em 0.4em;
+              a {
+                color: $danger;
+                font-size: 0.7em;
+                padding: 0;
+              }
+            }
+          }
+        }
+
+        .details {
+          .title {
+            display: inline;
+            color: $dark;
+            font-weight: 900;
+            font-size: 0.7em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid $danger;
+          }
+
+          p {
+            font-size: 0.7em;
+            color: $success;
+            font-weight: bold;
+          }
+
+          small {
+            font-size: 0.7em;
+            color: $dark;
+            font-weight: bold;
+            display: flex;
+          }
+
+          .profile-details {
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+            }
+
+            .profile-pic {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              img {
+                border: 2px solid $primary;
+                border-radius: 50%;
+                padding: 0.5em;
+              }
+            }
+          }
+
+          .guardian-details {
+            ul {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+
+          .provider-details {
+            ul {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+
+          .update-btn {
+            display: flex;
+            justify-content: flex-end;
+
+            .btn {
+              font-size: 0.7em;
+
+              &:hover {
+                color: $light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
