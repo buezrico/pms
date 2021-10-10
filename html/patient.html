@@ -249,59 +249,8 @@
                   Update Info
                 </button>
               </div>
-
-              <div class="details mt-3">
-                <div class="waveform">
-                  <h6>PATIENT WAVEFORM</h6>
-                  <p>ECG Waveform</p>
-                  <div class="ecg-waveform">
-                    <img
-                      id="vector"
-                      src="../assets/imgs/Vector.png"
-                      alt="Patient's ECG Waveform"
-                    />
-                  </div>
-                </div>
-                <div class="waveform-btns">
-                  <button class="btn btn-outline-secondary rounded-pill px-4">
-                    plot
-                  </button>
-                  <button class="btn btn-outline-secondary rounded-pill px-4">
-                    UDP
-                  </button>
-                  <button class="btn btn-outline-secondary rounded-pill px-4">
-                    ON
-                  </button>
-                  <button class="btn btn-outline-secondary rounded-pill px-4">
-                    OFF
-                  </button>
-                </div>
-              </div>
-              <div class="details mt-3">
-                <div class="vital-signs">
-                  <h6>VITAL SIGNS</h6>
-                  <p>Temperature</p>
-                  <p>Heart Rate (bpm)</p>
-                  <p>SPO2(%)</p>
-                  <p>Blood Pressure(mmHg)</p>
-                  <p>Respiration(breath/min)</p>
-                </div>
-                <div class="vital-signs-btns">
-                  <button class="btn btn-outline-secondary rounded-pill px-4">
-                    Connect
-                  </button>
-                  <button class="btn btn-outline-secondary rounded-pill px-4">
-                    Stop
-                  </button>
-                  <button class="btn btn-outline-secondary rounded-pill px-4">
-                    Pause
-                  </button>
-                  <button class="btn btn-outline-secondary rounded-pill px-4">
-                    Save
-                  </button>
-                </div>
-              </div>
             </div>
+            <div class="details mt-3"></div>
 
             <div class="details medical-record mt-3 mb-5" id="medical-record">
               <h6 class="title">ALLERGIES</h6>
@@ -425,122 +374,70 @@
             </div>
 
             <div class="details vital-signs mt-3 mb-5" id="vital-signs">
-              <h1 class="title">VITAL - SiGNS</h1>
-              <small class="mt-2 mb-3">Patient has 8 known allergies</small>
-              <ul class="allergies mb-4">
-                <li>
-                  <p>NAME</p>
-                  <p>SEVERITY</p>
-                  <p>REACTION</p>
-                </li>
-                <li>
-                  <small>Bee Stings</small>
-                  <small>Severe</small>
-                  <small>Anaphylactic Shock</small>
-                </li>
-                <li>
-                  <small>Dogs/pets</small>
-                  <small>Severe</small>
-                  <small>Anaphylactic Shock</small>
-                </li>
-                <li>
-                  <small>Peanuts</small>
-                  <small>Severe</small>
-                  <small>Anaphylactic Shock</small>
-                </li>
-                <li>
-                  <small>Penicilin</small>
-                  <small>Moderate to severe</small>
-                  <small>Anaphylactic Shock</small>
-                </li>
-                <li>
-                  <small>Codeine</small>
-                  <small>Moderate</small>
-                  <small>Hives</small>
-                </li>
-                <li>
-                  <small>Latex</small>
-                  <small>Moderate</small>
-                  <small>Hives</small>
-                </li>
-                <li>
-                  <small>Shellfish</small>
-                  <small>Moderate</small>
-                  <small>Hives</small>
-                </li>
-                <li>
-                  <small>Soy</small>
-                  <small>Moderate</small>
-                  <small>Hives</small>
-                </li>
-              </ul>
-
-              <h6 class="title">IMMUNIZATION</h6>
-              <small class="mt-2 mb-3"
-                >Patient has 2 upcoming immunizations</small
-              >
-              <ul class="immunization mb-4">
-                <li>
-                  <p>NAME</p>
-                  <small>Influenza Virus Vaccine</small>
-                  <p>TYPE AND DOSE</p>
-                  <small>Intramuscular Injection</small>
-                  <p>VALUE UNIT</p>
-                  <small>50 / mcg</small>
-                  <p>EDUCATION/INSTRUCTION</p>
-                  <small>Possible flu-like symptoms for 3 days</small>
-                  <div class="due d-flex">
-                    <p>DUE BY</p>
-                    <small class="mx-2">Dec 2021</small>
+              <div class="waveform">
+                <h6>PATIENT WAVEFORM</h6>
+                <p>ECG Waveform</p>
+                <div class="ecg-waveform">
+                  <img
+                    id="vector"
+                    src="../assets/imgs/Vector.png"
+                    alt="Patient's ECG Waveform"
+                  />
+                </div>
+              </div>
+              <div class="waveform-btns">
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                  plot
+                </button>
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                  UDP
+                </button>
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                  ON
+                </button>
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                  OFF
+                </button>
+              </div>
+              <div class="vital-signs-box">
+                <h6>VITAL SIGNS</h6>
+                <div class="vital-signs-items">
+                  <div class="signs">
+                    <p>Temperature (&degC)</p>
+                    <p class="box"></p>
                   </div>
-                </li>
-                <li>
-                  <p>NAME</p>
-                  <small>Tetanus and Diphtheria Toxoids</small>
-                  <p>TYPE AND DOSE</p>
-                  <small>Intramuscular Injection</small>
-                  <p>VALUE UNIT</p>
-                  <small>50 / mcg</small>
-                  <p>EDUCATION/INSTRUCTION</p>
-                  <small>Mild pain or soreness in the local area</small>
-
-                  <div class="due d-flex">
-                    <p>DUE BY</p>
-                    <small class="mx-2">Jan 2022</small>
+                  <div class="signs">
+                    <p>Heart Rate (bpm)</p>
+                    <p class="box"></p>
                   </div>
-                </li>
-              </ul>
-
-              <h6 class="title">APPOINTMENTS</h6>
-              <small class="mt-2 mb-3"
-                >Patient has 3 recommendations from the Doctor</small
-              >
-              <ul class="allergies mb-4">
-                <li>
-                  <p>NAME</p>
-                  <p>PLANNED DATE</p>
-                  <p>INSTRUCTIONS</p>
-                </li>
-                <li>
-                  <small>Office Consultation</small>
-                  <small>1 Dec 2021</small>
-                  <small></small>
-                </li>
-                <li>
-                  <small>Chest X-ray</small>
-                  <small>15 Dec 2021</small>
-                  <small></small>
-                </li>
-                <li>
-                  <small>Sputum Culture</small>
-                  <small>10 Jan 2022</small>
-                  <small></small>
-                </li>
-              </ul>
-
-              <div class="update-btn mt-3">
-                <button class="btn btn-outline-success rounded-pill px-4">
-                  Update Info
+                  <div class="signs">
+                    <p>SPO2(%)</p>
+                    <p class="box"></p>
+                  </div>
+                </div>
+                <div class="vital-signs-items">
+                  <div class="signs">
+                    <p>Blood Pressure(mmHg)</p>
+                    <p class="box"></p>
+                  </div>
+                  <div class="signs">
+                    <p>Respiration(breath/min)</p>
+                    <p class="box"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="vital-signs-btns">
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                  Connect
+                </button>
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                  Stop
+                </button>
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                  Pause
+                </button>
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                  Save
                 </button>
               </div>
             </div>
