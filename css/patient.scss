@@ -2,6 +2,29 @@
 @import "../assets/fonts/Lato-Regular.ttf";
 
 .patient {
+  .details {
+    .title {
+      display: inline;
+      color: $dark;
+      font-weight: 900;
+      font-size: 0.7em;
+      padding-bottom: 0.3em;
+      border-bottom: 2px solid $danger;
+    }
+
+    p {
+      font-size: 0.7em;
+      color: $success;
+      font-weight: bold;
+    }
+
+    small {
+      font-size: 0.7em;
+      color: $dark;
+      font-weight: bold;
+      display: flex;
+    }
+  }
   .top {
     z-index: 1;
     position: sticky;
@@ -306,27 +329,6 @@
           }
         }
 
-        .title {
-          display: inline;
-          color: $dark;
-          font-weight: 900;
-          font-size: 0.7em;
-          padding-bottom: 0.3em;
-          border-bottom: 2px solid $danger;
-        }
-
-        p {
-          font-size: 0.7em;
-          color: $success;
-          font-weight: bold;
-        }
-
-        small {
-          font-size: 0.7em;
-          color: $dark;
-          font-weight: bold;
-          display: flex;
-        }
         .update-btn {
           display: flex;
           justify-content: flex-end;
@@ -413,16 +415,51 @@
   }
 
   .add-patient-modal {
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
-    visibility: hidden;
-    opacity: 0;
+    // visibility: hidden;
+    // opacity: 0;
     transition: all 1s ease-in-out;
+    padding: 5em;
+
+    .inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      form {
+        background: $warning;
+        padding: 2em;
+        box-shadow: 2px 2px 10px rgba(57, 4, 4, 0.5);
+
+        .form {
+          .add-pic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+              width: 5em;
+              padding: 0.5em;
+              border: 1px solid $primary;
+              background-color: $light;
+              margin-bottom: 0.5em;
+            }
+
+            button {
+              font-size: 0.6em;
+
+              &:hover {
+                color: $light;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .add-patient-toggle {
     visibility: visible;
