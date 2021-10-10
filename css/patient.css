@@ -108,12 +108,12 @@
   border-bottom: 2px solid #820808;
 }
 
-.patient .top .topbar .inner .add-patient button {
+.patient .top .topbar .inner .add-patient-btn button {
   font-size: 0.8em;
   margin: 0.8em;
 }
 
-.patient .top .topbar .inner .add-patient button:hover {
+.patient .top .topbar .inner .add-patient-btn button:hover {
   color: #ffffff;
 }
 
@@ -376,37 +376,35 @@
   justify-content: flex-end;
 }
 
-.patient main .inner .info nav ul {
-  background-color: #f4d3d3;
-  padding: 0;
-}
-
-.patient main .inner .info nav ul li {
-  padding: 0.3em 0.4em;
-}
-
-.patient main .inner .info nav ul li a {
+.patient main .inner .info nav .patient-link {
+  padding: 0.5em 0.4em;
+  cursor: pointer;
   color: #820808;
   font-size: 0.7em;
-  padding: 0;
 }
 
-.patient main .inner .info .details .title {
+.patient main .inner .info nav .patient-link:hover,
+.patient main .inner .info nav .patient-active {
+  background-color: #820808;
+  color: #ffffff;
+}
+
+.patient main .inner .info .title {
   display: inline;
   color: #390404;
   font-weight: 900;
   font-size: 0.7em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #820808;
+  border-bottom: 2px solid #820808;
 }
 
-.patient main .inner .info .details p {
+.patient main .inner .info p {
   font-size: 0.7em;
   color: #a77171;
   font-weight: bold;
 }
 
-.patient main .inner .info .details small {
+.patient main .inner .info small {
   font-size: 0.7em;
   color: #390404;
   font-weight: bold;
@@ -415,7 +413,24 @@
   display: flex;
 }
 
-.patient main .inner .info .details .profile-details {
+.patient main .inner .info .update-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.patient main .inner .info .update-btn .btn {
+  font-size: 0.7em;
+}
+
+.patient main .inner .info .update-btn .btn:hover {
+  color: #ffffff;
+}
+
+.patient main .inner .info .patient-details .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,14 +439,14 @@
   justify-content: space-between;
 }
 
-.patient main .inner .info .details .profile-details ul {
+.patient main .inner .info .patient-details .profile ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr) [2];
   grid-template-columns: repeat(2, 1fr);
 }
 
-.patient main .inner .info .details .profile-details .profile-pic {
+.patient main .inner .info .patient-details .profile .profile-pic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,26 +459,27 @@
   align-items: center;
 }
 
-.patient main .inner .info .details .profile-details .profile-pic img {
+.patient main .inner .info .patient-details .profile .profile-pic img {
   border: 2px solid #de5d5d;
   border-radius: 50%;
   padding: 0.5em;
 }
 
-.patient main .inner .info .details .guardian-details ul {
+.patient main .inner .info .patient-details .guardian ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr) [3];
   grid-template-columns: repeat(3, 1fr);
 }
 
-.patient main .inner .info .details .provider-details ul {
+.patient main .inner .info .patient-details .provider ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr) [3];
   grid-template-columns: repeat(3, 1fr);
 }
 
+<<<<<<< HEAD
 .patient main .inner .info .details .update-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,14 +487,60 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+=======
+.patient main .inner .info .medical-record {
+  display: none;
+>>>>>>> origin
 }
 
-.patient main .inner .info .details .update-btn .btn {
-  font-size: 0.7em;
+.patient main .inner .info .medical-record .allergies li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 0.4em 0;
+  border-bottom: 1px solid #a77171;
 }
 
-.patient main .inner .info .details .update-btn .btn:hover {
-  color: #ffffff;
+.patient main .inner .info .medical-record .immunization {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4em;
+}
+
+.patient main .inner .info .medical-record .immunization li {
+  border: 1px solid #de5d5d;
+  padding: 1em;
+}
+
+.patient main .inner .info .medical-record .immunization li small,
+.patient main .inner .info .medical-record .immunization li p {
+  margin-bottom: 0.3em;
+}
+
+.patient main .inner .info .vital-signs {
+  display: none;
+}
+
+.patient .add-patient-modal {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.patient .add-patient-toggle {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* DRACO'S VITAL SIGNS CSS Starts Here */
