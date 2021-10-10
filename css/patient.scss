@@ -157,12 +157,12 @@
 
           p {
             text-decoration: underline;
-            font-size: 0.9em;
+            font-size: 0.8em;
           }
 
           select {
             height: 3em;
-            font-size: 0.8em;
+            font-size: 0.7em;
             padding: 0.5em;
             color: $success;
             background-color: $warning;
@@ -172,7 +172,7 @@
 
           input {
             height: 3em;
-            font-size: 0.8em;
+            font-size: 0.7em;
             padding-left: 3em;
             color: $success;
             background-color: $warning;
@@ -228,7 +228,7 @@
               }
 
               p {
-                font-size: 0.8em;
+                font-size: 0.7em;
 
                 &:nth-child(2) {
                   position: absolute;
@@ -276,14 +276,109 @@
             border-left: 1px solid $primary;
 
             cursor: pointer;
+
+            i {
+              font-size: 0.8em;
+            }
           }
         }
       }
 
       .info {
-        background: red;
         width: 100%;
         margin-left: 40%;
+
+        nav {
+          display: flex;
+          justify-content: flex-end;
+
+          ul {
+            background-color: $info;
+            padding: 0;
+
+            li {
+              padding: 0.3em 0.4em;
+              a {
+                color: $danger;
+                font-size: 0.7em;
+                padding: 0;
+              }
+            }
+          }
+        }
+
+        .details {
+          .title {
+            display: inline;
+            color: $dark;
+            font-weight: 900;
+            font-size: 0.7em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid $danger;
+          }
+
+          p {
+            font-size: 0.7em;
+            color: $success;
+            font-weight: bold;
+          }
+
+          small {
+            font-size: 0.7em;
+            color: $dark;
+            font-weight: bold;
+            display: flex;
+          }
+
+          .profile-details {
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+            }
+
+            .profile-pic {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              img {
+                border: 2px solid $primary;
+                border-radius: 50%;
+                padding: 0.5em;
+              }
+            }
+          }
+
+          .guardian-details {
+            ul {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+
+          .provider-details {
+            ul {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+
+          .update-btn {
+            display: flex;
+            justify-content: flex-end;
+
+            .btn {
+              font-size: 0.7em;
+
+              &:hover {
+                color: $light;
+              }
+            }
+          }
+        }
       }
     }
   }
