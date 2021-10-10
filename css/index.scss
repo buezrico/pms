@@ -3,7 +3,7 @@
 
 header {
   height: 100vh;
-  background-color: #e7e0e0;
+  background-color: $warning;
   background-image: url("../assets/imgs/header-bg.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -97,10 +97,7 @@ header {
 
   .login-modal {
     height: 100vh;
-    // background-color: #e7e0e0;
-    // background-image: url("../assets/imgs/header-bg.png");
-    // background-position: bottom;
-    // background-repeat: no-repeat;
+
     width: 100%;
     position: fixed;
     visibility: hidden;

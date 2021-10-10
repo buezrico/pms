@@ -28,7 +28,7 @@
 
             <div class="user-profile">
               <i class="fas fa-user-circle"></i>
-              <p class="fw-bold">Obe Sampson</p>
+              <p class="fw-bold">Nnammusco</p>
               <i class="fas fa-caret-down"></i>
             </div>
           </div>
@@ -40,7 +40,7 @@
               <p>PATIENT INFO</p>
               <p>PATIENT RECORD</p>
             </div>
-            <div class="add-patient">
+            <div class="add-patient-btn">
               <button class="btn btn-outline-success rounded-pill px-4">
                 Add Patient
               </button>
@@ -140,22 +140,32 @@
 
           <div class="info">
             <nav class="nav">
-              <ul class="navbar">
-                <li class="nav-item bg-danger">
-                  <a href="" class="nav-link text-light">Patient Details</a>
-                </li>
-                <li class="nav-item">
-                  <a href="" class="nav-link">Medical Details</a>
-                </li>
-                <li class="nav-item">
-                  <a href="" class="nav-link">Vital Signs</a>
-                </li>
-              </ul>
+              <button
+                class="btn-info btn rounded-0 patient-link patient-active"
+                onclick="patientDetails()"
+              >
+                Patient Details
+              </button>
+              <button
+                class="btn-info btn rounded-0 patient-link"
+                onclick="medicalRecord()"
+              >
+                Medical Record
+              </button>
+              <button
+                class="btn-info btn rounded-0 patient-link"
+                onclick="vitalSigns()"
+              >
+                Vital Signs
+              </button>
             </nav>
 
-            <div class="details mt-3">
+            <div
+              class="patient-details patient-info show-patient-info mt-3"
+              id="patient-details"
+            >
               <h6 class="title">PROFILE</h6>
-              <div class="profile-details my-2">
+              <div class="profile my-2">
                 <ul>
                   <li>
                     <p>DATE OF BIRTH</p>
@@ -191,7 +201,7 @@
               </div>
 
               <h6 class="title">GUARDIAN</h6>
-              <div class="guardian-details my-2">
+              <div class="guardian my-2">
                 <ul>
                   <li>
                     <p>SISTER</p>
@@ -209,7 +219,7 @@
               </div>
 
               <h6 class="title">PROVIDER</h6>
-              <div class="provider-details my-2">
+              <div class="provider my-2">
                 <ul>
                   <li>
                     <p>Name</p>
@@ -232,9 +242,255 @@
                 </button>
               </div>
             </div>
+
+            <div class="details medical-record mt-3 mb-5" id="medical-record">
+              <h6 class="title">ALLERGIES</h6>
+              <small class="mt-2 mb-3">Patient has 8 known allergies</small>
+              <ul class="allergies mb-4">
+                <li>
+                  <p>NAME</p>
+                  <p>SEVERITY</p>
+                  <p>REACTION</p>
+                </li>
+                <li>
+                  <small>Bee Stings</small>
+                  <small>Severe</small>
+                  <small>Anaphylactic Shock</small>
+                </li>
+                <li>
+                  <small>Dogs/pets</small>
+                  <small>Severe</small>
+                  <small>Anaphylactic Shock</small>
+                </li>
+                <li>
+                  <small>Peanuts</small>
+                  <small>Severe</small>
+                  <small>Anaphylactic Shock</small>
+                </li>
+                <li>
+                  <small>Penicilin</small>
+                  <small>Moderate to severe</small>
+                  <small>Anaphylactic Shock</small>
+                </li>
+                <li>
+                  <small>Codeine</small>
+                  <small>Moderate</small>
+                  <small>Hives</small>
+                </li>
+                <li>
+                  <small>Latex</small>
+                  <small>Moderate</small>
+                  <small>Hives</small>
+                </li>
+                <li>
+                  <small>Shellfish</small>
+                  <small>Moderate</small>
+                  <small>Hives</small>
+                </li>
+                <li>
+                  <small>Soy</small>
+                  <small>Moderate</small>
+                  <small>Hives</small>
+                </li>
+              </ul>
+
+              <h6 class="title">IMMUNIZATION</h6>
+              <small class="mt-2 mb-3"
+                >Patient has 2 upcoming immunizations</small
+              >
+              <ul class="immunization mb-4">
+                <li>
+                  <p>NAME</p>
+                  <small>Influenza Virus Vaccine</small>
+                  <p>TYPE AND DOSE</p>
+                  <small>Intramuscular Injection</small>
+                  <p>VALUE UNIT</p>
+                  <small>50 / mcg</small>
+                  <p>EDUCATION/INSTRUCTION</p>
+                  <small>Possible flu-like symptoms for 3 days</small>
+                  <div class="due d-flex">
+                    <p>DUE BY</p>
+                    <small class="mx-2">Dec 2021</small>
+                  </div>
+                </li>
+                <li>
+                  <p>NAME</p>
+                  <small>Tetanus and Diphtheria Toxoids</small>
+                  <p>TYPE AND DOSE</p>
+                  <small>Intramuscular Injection</small>
+                  <p>VALUE UNIT</p>
+                  <small>50 / mcg</small>
+                  <p>EDUCATION/INSTRUCTION</p>
+                  <small>Mild pain or soreness in the local area</small>
+
+                  <div class="due d-flex">
+                    <p>DUE BY</p>
+                    <small class="mx-2">Jan 2022</small>
+                  </div>
+                </li>
+              </ul>
+
+              <h6 class="title">APPOINTMENTS</h6>
+              <small class="mt-2 mb-3"
+                >Patient has 3 recommendations from the Doctor</small
+              >
+              <ul class="allergies mb-4">
+                <li>
+                  <p>NAME</p>
+                  <p>PLANNED DATE</p>
+                  <p>INSTRUCTIONS</p>
+                </li>
+                <li>
+                  <small>Office Consultation</small>
+                  <small>1 Dec 2021</small>
+                  <small></small>
+                </li>
+                <li>
+                  <small>Chest X-ray</small>
+                  <small>15 Dec 2021</small>
+                  <small></small>
+                </li>
+                <li>
+                  <small>Sputum Culture</small>
+                  <small>10 Jan 2022</small>
+                  <small></small>
+                </li>
+              </ul>
+
+              <div class="update-btn mt-3">
+                <button class="btn btn-outline-success rounded-pill px-4">
+                  Update Info
+                </button>
+              </div>
+            </div>
+
+            <div class="details vital-signs mt-3 mb-5" id="vital-signs">
+              <h1 class="title">VITAL - SiGNS</h1>
+              <small class="mt-2 mb-3">Patient has 8 known allergies</small>
+              <ul class="allergies mb-4">
+                <li>
+                  <p>NAME</p>
+                  <p>SEVERITY</p>
+                  <p>REACTION</p>
+                </li>
+                <li>
+                  <small>Bee Stings</small>
+                  <small>Severe</small>
+                  <small>Anaphylactic Shock</small>
+                </li>
+                <li>
+                  <small>Dogs/pets</small>
+                  <small>Severe</small>
+                  <small>Anaphylactic Shock</small>
+                </li>
+                <li>
+                  <small>Peanuts</small>
+                  <small>Severe</small>
+                  <small>Anaphylactic Shock</small>
+                </li>
+                <li>
+                  <small>Penicilin</small>
+                  <small>Moderate to severe</small>
+                  <small>Anaphylactic Shock</small>
+                </li>
+                <li>
+                  <small>Codeine</small>
+                  <small>Moderate</small>
+                  <small>Hives</small>
+                </li>
+                <li>
+                  <small>Latex</small>
+                  <small>Moderate</small>
+                  <small>Hives</small>
+                </li>
+                <li>
+                  <small>Shellfish</small>
+                  <small>Moderate</small>
+                  <small>Hives</small>
+                </li>
+                <li>
+                  <small>Soy</small>
+                  <small>Moderate</small>
+                  <small>Hives</small>
+                </li>
+              </ul>
+
+              <h6 class="title">IMMUNIZATION</h6>
+              <small class="mt-2 mb-3"
+                >Patient has 2 upcoming immunizations</small
+              >
+              <ul class="immunization mb-4">
+                <li>
+                  <p>NAME</p>
+                  <small>Influenza Virus Vaccine</small>
+                  <p>TYPE AND DOSE</p>
+                  <small>Intramuscular Injection</small>
+                  <p>VALUE UNIT</p>
+                  <small>50 / mcg</small>
+                  <p>EDUCATION/INSTRUCTION</p>
+                  <small>Possible flu-like symptoms for 3 days</small>
+                  <div class="due d-flex">
+                    <p>DUE BY</p>
+                    <small class="mx-2">Dec 2021</small>
+                  </div>
+                </li>
+                <li>
+                  <p>NAME</p>
+                  <small>Tetanus and Diphtheria Toxoids</small>
+                  <p>TYPE AND DOSE</p>
+                  <small>Intramuscular Injection</small>
+                  <p>VALUE UNIT</p>
+                  <small>50 / mcg</small>
+                  <p>EDUCATION/INSTRUCTION</p>
+                  <small>Mild pain or soreness in the local area</small>
+
+                  <div class="due d-flex">
+                    <p>DUE BY</p>
+                    <small class="mx-2">Jan 2022</small>
+                  </div>
+                </li>
+              </ul>
+
+              <h6 class="title">APPOINTMENTS</h6>
+              <small class="mt-2 mb-3"
+                >Patient has 3 recommendations from the Doctor</small
+              >
+              <ul class="allergies mb-4">
+                <li>
+                  <p>NAME</p>
+                  <p>PLANNED DATE</p>
+                  <p>INSTRUCTIONS</p>
+                </li>
+                <li>
+                  <small>Office Consultation</small>
+                  <small>1 Dec 2021</small>
+                  <small></small>
+                </li>
+                <li>
+                  <small>Chest X-ray</small>
+                  <small>15 Dec 2021</small>
+                  <small></small>
+                </li>
+                <li>
+                  <small>Sputum Culture</small>
+                  <small>10 Jan 2022</small>
+                  <small></small>
+                </li>
+              </ul>
+
+              <div class="update-btn mt-3">
+                <button class="btn btn-outline-success rounded-pill px-4">
+                  Update Info
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </main>
+
+      <div class="add-patient"></div>
     </header>
+
+    <script src="/js/patient.js"></script>
   </body>
 </html>

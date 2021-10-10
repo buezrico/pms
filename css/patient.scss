@@ -76,7 +76,7 @@
           }
         }
 
-        .add-patient {
+        .add-patient-btn {
           button {
             font-size: 0.8em;
             margin: 0.8em;
@@ -292,52 +292,62 @@
           display: flex;
           justify-content: flex-end;
 
-          ul {
-            background-color: $info;
-            padding: 0;
+          .patient-link {
+            padding: 0.5em 0.4em;
+            cursor: pointer;
+            color: $danger;
+            font-size: 0.7em;
+          }
 
-            li {
-              padding: 0.3em 0.4em;
-              a {
-                color: $danger;
-                font-size: 0.7em;
-                padding: 0;
-              }
+          .patient-link:hover,
+          .patient-active {
+            background-color: $danger;
+            color: $light;
+          }
+        }
+
+        .title {
+          display: inline;
+          color: $dark;
+          font-weight: 900;
+          font-size: 0.7em;
+          padding-bottom: 0.3em;
+          border-bottom: 2px solid $danger;
+        }
+
+        p {
+          font-size: 0.7em;
+          color: $success;
+          font-weight: bold;
+        }
+
+        small {
+          font-size: 0.7em;
+          color: $dark;
+          font-weight: bold;
+          display: flex;
+        }
+        .update-btn {
+          display: flex;
+          justify-content: flex-end;
+
+          .btn {
+            font-size: 0.7em;
+
+            &:hover {
+              color: $light;
             }
           }
         }
 
-        .details {
-          .title {
-            display: inline;
-            color: $dark;
-            font-weight: 900;
-            font-size: 0.7em;
-            padding-bottom: 0.3em;
-            border-bottom: 1px solid $danger;
-          }
-
-          p {
-            font-size: 0.7em;
-            color: $success;
-            font-weight: bold;
-          }
-
-          small {
-            font-size: 0.7em;
-            color: $dark;
-            font-weight: bold;
-            display: flex;
-          }
-
-          .profile-details {
-            display: flex;
-            justify-content: space-between;
-
+        .patient-details {
+          .profile {
             ul {
               display: grid;
               grid-template-columns: repeat(2, 1fr);
             }
+            display: flex;
+            justify-content: space-between;
 
             .profile-pic {
               display: flex;
@@ -352,34 +362,63 @@
             }
           }
 
-          .guardian-details {
+          .guardian {
             ul {
               display: grid;
               grid-template-columns: repeat(3, 1fr);
             }
           }
 
-          .provider-details {
+          .provider {
             ul {
               display: grid;
               grid-template-columns: repeat(3, 1fr);
             }
           }
+        }
 
-          .update-btn {
-            display: flex;
-            justify-content: flex-end;
+        .medical-record {
+          display: none;
+          .allergies {
+            li {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              padding: 0.4em 0;
+              border-bottom: 1px solid $success;
+            }
+          }
 
-            .btn {
-              font-size: 0.7em;
+          .immunization {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 4em;
 
-              &:hover {
-                color: $light;
+            li {
+              border: 1px solid $primary;
+              padding: 1em;
+
+              small,
+              p {
+                margin-bottom: 0.3em;
               }
             }
           }
         }
+
+        .vital-signs {
+          display: none;
+        }
       }
     }
+  }
+
+  .add-patient {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
 }
