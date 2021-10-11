@@ -1,10 +1,6 @@
 header {
-  height: 100vh;
-  background-color: #f0e1e1;
-  background-image: url("../assets/imgs/header-bg.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 103vh;
+  background-color: #89d1cd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +8,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 header nav {
@@ -19,10 +17,17 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav .brand {
   z-index: 10;
+}
+
+header nav .brand img {
+  width: 10em;
 }
 
 header nav .brand a {
@@ -36,7 +41,8 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font-size: 0.8em !important;
+  font-weight: bold;
+  font-size: 0.9em !important;
   margin-left: 2em;
 }
 
@@ -76,7 +82,7 @@ header .banner .inner {
 
 header .banner .inner .left {
   height: 50%;
-  width: 35%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +93,12 @@ header .banner .inner .left {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(65.07%, rgba(240, 225, 225, 0.77)), color-stop(95.09%, rgba(240, 225, 225, 0.1463)), color-stop(65.07%, rgba(240, 225, 225, 0.77)), color-stop(95.09%, rgba(240, 225, 225, 0.1463)));
+  background: linear-gradient(90deg, rgba(240, 225, 225, 0.77) 65.07%, rgba(240, 225, 225, 0.1463) 95.09%, rgba(240, 225, 225, 0.77) 65.07%, rgba(240, 225, 225, 0.1463) 95.09%);
+  -webkit-box-shadow: 0px 10px 14px rgba(166, 88, 88, 0.38);
+          box-shadow: 0px 10px 14px rgba(166, 88, 88, 0.38);
+  padding: 3em 2em;
+  border-radius: 3em;
 }
 
 header .banner .inner .left p {
@@ -94,22 +106,23 @@ header .banner .inner .left p {
 }
 
 header .banner .inner .left .title {
-  font-size: 1.8em;
+  font-size: 2.5em;
 }
 
 header .banner .inner .left .btn {
   font-weight: bold;
   color: #ffffff;
+  font-size: 1.5em;
 }
 
 header .banner .inner .left .btn:hover {
   background: transparent;
-  color: #de5d5d;
+  color: #bc0a0f;
 }
 
 header .banner .inner .right {
   height: 50%;
-  width: 35%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,19 +141,18 @@ header .banner .inner .right img {
 }
 
 header .login-modal {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
+  -webkit-transform: rotateX(65deg) scale(0.75) translateY(30px);
+          transform: rotateX(65deg) scale(0.75) translateY(30px);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  left: 0;
-  top: -100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 header .login-modal .inner {
-  height: 90%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,11 +165,12 @@ header .login-modal .inner {
 }
 
 header .login-modal .inner form {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60.07%, rgba(240, 225, 225, 0.77)), color-stop(90.09%, rgba(240, 225, 225, 0.1463)));
-  background: linear-gradient(180deg, rgba(240, 225, 225, 0.77) 60.07%, rgba(240, 225, 225, 0.1463) 90.09%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60.07%, rgba(240, 225, 225, 0.77)));
+  background: linear-gradient(180deg, rgba(240, 225, 225, 0.77) 60.07%);
   -webkit-box-shadow: 0px 10px 14px rgba(166, 88, 88, 0.38);
           box-shadow: 0px 10px 14px rgba(166, 88, 88, 0.38);
-  padding: 3em 2em;
+  padding: 5em 5em;
+  border-radius: 2em;
 }
 
 header .login-modal .inner form .form {
@@ -171,41 +184,42 @@ header .login-modal .inner form .form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #a65858;
+  color: #151513;
 }
 
 header .login-modal .inner form .form input {
   background: transparent;
   padding: 0.5em;
   outline: none;
-  border: 1px solid #a77171;
-  color: #a65858;
+  border: 2px solid #16a39c;
+  color: #151513;
+  border-radius: 0.5em;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 
 header .login-modal .inner form .form input::-webkit-input-placeholder {
-  color: #a65858;
-  font-size: 0.7em;
+  color: #151513;
+  font-size: 0.8em;
 }
 
 header .login-modal .inner form .form input:-ms-input-placeholder {
-  color: #a65858;
-  font-size: 0.7em;
+  color: #151513;
+  font-size: 0.8em;
 }
 
 header .login-modal .inner form .form input::-ms-input-placeholder {
-  color: #a65858;
-  font-size: 0.7em;
+  color: #151513;
+  font-size: 0.8em;
 }
 
 header .login-modal .inner form .form input::placeholder {
-  color: #a65858;
-  font-size: 0.7em;
+  color: #151513;
+  font-size: 0.8em;
 }
 
 header .login-modal .inner form .form input:focus {
-  border: 2px solid #820808;
+  border: 2px solid #bc0a0f;
 }
 
 header .login-modal .inner form .form input:nth-child(3) {
@@ -214,18 +228,18 @@ header .login-modal .inner form .form input:nth-child(3) {
 
 header .login-modal .inner form .form .password-toggle {
   position: absolute;
-  margin-top: 8em;
+  margin-top: 8.8em;
   margin-left: 10em;
   cursor: pointer;
 }
 
 header .login-modal .inner form .form small {
-  font-size: 0.7em;
+  font-size: 0.8em;
   cursor: pointer;
 }
 
 header .login-modal .inner form .form p {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: bold;
 }
 
@@ -234,13 +248,14 @@ header .login-modal .inner form .form p i {
 }
 
 header .login-modal .inner form .form .btn {
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 
 header .login-modal-toggle {
+  -webkit-transform: rotateX(0) scale(1) translateY(0);
+          transform: rotateX(0) scale(1) translateY(0);
   visibility: visible;
   opacity: 1;
-  top: 0;
 }
 
 .login-modal-coming nav ul {

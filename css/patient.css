@@ -1,21 +1,20 @@
 .patient .details .title {
   display: inline;
-  color: #390404;
+  color: #6e0b1a;
   font-weight: 900;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding-bottom: 0.3em;
-  border-bottom: 2px solid #820808;
 }
 
 .patient .details p {
-  font-size: 0.7em;
-  color: #a77171;
+  font-size: 0.8em;
+  color: #50bab5;
   font-weight: bold;
 }
 
 .patient .details small {
-  font-size: 0.7em;
-  color: #390404;
+  font-size: 0.8em;
+  color: #950b15;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,13 +29,12 @@
   left: 0;
   height: 20%;
   width: 100%;
-  background: red;
 }
 
 .patient .top nav {
-  background-color: #820808;
+  background-color: #89d1cd;
   padding: 0.3em 0;
-  color: #ffffff;
+  color: #bc0a0f;
 }
 
 .patient .top nav .inner {
@@ -58,8 +56,7 @@
 }
 
 .patient .top nav .inner .brand img {
-  width: 2em;
-  margin-right: 0.5em;
+  width: 8em;
 }
 
 .patient .top nav .inner .brand p {
@@ -92,11 +89,11 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 0.5em;
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 
 .patient .top .topbar {
-  background-color: #f4d3d3;
+  background-color: #50bab5;
 }
 
 .patient .top .topbar .inner {
@@ -116,7 +113,8 @@
 }
 
 .patient .top .topbar .inner .links p {
-  font-size: 0.7em;
+  font-size: 1em;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,12 +127,14 @@
 
 .patient .top .topbar .inner .links p:nth-child(1) {
   margin-right: 3em;
-  border-bottom: 2px solid #820808;
+  border-bottom: 2px solid #6e0b1a;
 }
 
 .patient .top .topbar .inner .add-patient-btn button {
   font-size: 0.8em;
+  font-weight: bold;
   margin: 0.8em;
+  border: 2px solid #6e0b1a;
 }
 
 .patient .top .topbar .inner .add-patient-btn button:hover {
@@ -144,11 +144,11 @@
 .patient aside {
   height: 100vh;
   width: 5%;
-  background-color: #f0e1e1;
+  background-color: #50bab5;
   position: fixed;
   left: 0;
   top: 0;
-  border-right: 1px solid #de5d5d;
+  border-right: 1px solid #bc0a0f;
   padding-top: 8em;
 }
 
@@ -185,19 +185,19 @@
 }
 
 .patient aside ul li:nth-child(1) {
-  background-color: #820808;
+  background-color: #6e0b1a;
 }
 
 .patient aside ul li:nth-child(1) i {
   border: 1px solid #ffffff;
-  color: #820808;
+  color: #6e0b1a;
   background-color: #ffffff;
 }
 
 .patient aside ul li i {
-  border: 1px solid #a65858;
+  border: 2px solid #6e0b1a;
   padding: 0.3em;
-  color: #a65858;
+  color: #6e0b1a;
   border-radius: 0.2em;
   cursor: pointer;
 }
@@ -218,54 +218,56 @@
   position: fixed;
   left: 10%;
   width: 30%;
-  border: 1px solid #de5d5d;
+  border: 2px solid #6e0b1a;
 }
 
 .patient main .inner .list .search {
   padding: 0.5em 1em;
-  color: #a77171;
-  border-bottom: 2px solid #de5d5d;
+  color: #6e0b1a;
+  border-bottom: 2px solid #bc0a0f;
 }
 
 .patient main .inner .list .search p {
   text-decoration: underline;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .patient main .inner .list .search select {
   height: 3em;
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding: 0.5em;
-  color: #a77171;
-  background-color: #f0e1e1;
+  color: #6e0b1a;
+  background-color: #89d1cd;
   outline: 0;
-  border: 1px solid #a77171;
+  border: 2px solid #6e0b1a;
+  font-weight: bold;
 }
 
 .patient main .inner .list .search input {
   height: 3em;
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding-left: 3em;
-  color: #a77171;
-  background-color: #f0e1e1;
+  color: #6e0b1a;
+  background-color: #89d1cd;
   outline: 0;
-  border: 1px solid #a77171;
+  border: 2px solid #6e0b1a;
+  font-weight: bold;
 }
 
 .patient main .inner .list .search input::-webkit-input-placeholder {
-  color: #a77171;
+  color: #6e0b1a;
 }
 
 .patient main .inner .list .search input:-ms-input-placeholder {
-  color: #a77171;
+  color: #6e0b1a;
 }
 
 .patient main .inner .list .search input::-ms-input-placeholder {
-  color: #a77171;
+  color: #6e0b1a;
 }
 
 .patient main .inner .list .search input::placeholder {
-  color: #a77171;
+  color: #6e0b1a;
 }
 
 .patient main .inner .list .search input:focus {
@@ -275,12 +277,12 @@
 .patient main .inner .list .search i {
   position: absolute;
   margin-left: 1em;
-  margin-top: 1em;
-  font-size: 0.7em;
+  margin-top: 1.5em;
+  font-size: 0.8em;
 }
 
 .patient main .inner .list .patient-list {
-  color: #820808;
+  color: #6e0b1a;
 }
 
 .patient main .inner .list .patient-list ul li {
@@ -295,8 +297,8 @@
 }
 
 .patient main .inner .list .patient-list ul li:nth-child(1) {
-  border-bottom: 1px solid #390404;
-  background-color: #f0e1e1;
+  border-bottom: 2px solid #6e0b1a;
+  background-color: #89d1cd;
 }
 
 .patient main .inner .list .patient-list ul li:nth-child(1) input {
@@ -305,20 +307,22 @@
 
 .patient main .inner .list .patient-list ul li:nth-child(1) p {
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 .patient main .inner .list .patient-list ul li:nth-child(3) {
-  background-color: #820808;
+  background-color: #950b15;
   color: #ffffff;
 }
 
 .patient main .inner .list .patient-list ul li input {
-  font-size: 0.7em;
+  font-size: 0.9em;
   height: 0.8em;
 }
 
 .patient main .inner .list .patient-list ul li p {
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 .patient main .inner .list .patient-list ul li p:nth-child(2) {
@@ -342,12 +346,13 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 0.5em;
-  border-top: 2px solid #de5d5d;
-  border-bottom: 1px solid #de5d5d;
+  border-top: 2px solid #6e0b1a;
+  border-bottom: 1px solid #6e0b1a;
 }
 
 .patient main .inner .list .edit button {
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 .patient main .inner .list .display {
@@ -360,7 +365,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #820808;
+  color: #6e0b1a;
   padding: 0 0.3em;
 }
 
@@ -378,7 +383,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 0.5em;
-  border-left: 1px solid #de5d5d;
+  border-left: 1px solid #bc0a0f;
   cursor: pointer;
 }
 
@@ -401,16 +406,18 @@
 }
 
 .patient main .inner .info nav .patient-link {
-  padding: 0.5em 0.4em;
+  padding: 0.5em 1em;
   cursor: pointer;
-  color: #820808;
-  font-size: 0.7em;
+  color: #6e0b1a;
+  font-size: 0.9em;
+  font-weight: bold;
+  background-color: transparent;
 }
 
 .patient main .inner .info nav .patient-link:hover,
 .patient main .inner .info nav .patient-active {
-  background-color: #820808;
-  color: #ffffff;
+  border-bottom: 3px solid #16a39c;
+  color: #16a39c;
 }
 
 .patient main .inner .info .update-btn {
@@ -423,7 +430,8 @@
 }
 
 .patient main .inner .info .update-btn .btn {
-  font-size: 0.7em;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 .patient main .inner .info .update-btn .btn:hover {
@@ -447,30 +455,16 @@
 }
 
 .patient main .inner .info .patient-details .profile .profile-pic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-bottom: 2em;
 }
 
 .patient main .inner .info .patient-details .profile .profile-pic img {
-  border: 2px solid #de5d5d;
-  padding: 0.5em;
+  border: 3px dashed #16a39c;
+  padding: 1em;
+  border-radius: 50%;
 }
 
-.patient main .inner .info .patient-details .guardian ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
+.patient main .inner .info .patient-details .guardian ul,
 .patient main .inner .info .patient-details .provider ul {
   display: -ms-grid;
   display: grid;
@@ -488,7 +482,7 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   padding: 0.4em 0;
-  border-bottom: 1px solid #a77171;
+  border-bottom: 1px solid #50bab5;
 }
 
 .patient main .inner .info .medical-record .immunization {
@@ -500,7 +494,7 @@
 }
 
 .patient main .inner .info .medical-record .immunization li {
-  border: 1px solid #de5d5d;
+  border: 1px solid #bc0a0f;
   padding: 1em;
 }
 
@@ -514,53 +508,60 @@
 }
 
 .patient main .inner .info .vital-signs h6 {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
-  color: #a65858;
-  margin-bottom: 10px;
+  color: #6e0b1a;
+  margin-bottom: 1em;
 }
 
 .patient main .inner .info .vital-signs p {
-  font-size: 16px;
-  font-weight: normal;
-  color: #390404;
-  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #950b15;
+  margin-bottom: 1em;
 }
 
 .patient main .inner .info .vital-signs .waveform {
-  width: 606px;
-  height: 274px;
-  padding: 20px;
-  margin: 1.25rem 0px;
-  -webkit-box-shadow: 0px 1px 10px #a77171;
-          box-shadow: 0px 1px 10px #a77171;
-}
-
-.patient main .inner .info .vital-signs .waveform .ecg-waveform {
-  width: 566px;
-  height: 156px;
-  background-color: #820808;
-  padding: 20px 0px;
-}
-
-.patient main .inner .info .vital-signs .waveform-btns {
-  width: 606px;
+  padding: 2em;
+  margin: 1em 0;
+  -webkit-box-shadow: 0px 1px 10px #50bab5;
+          box-shadow: 0px 1px 10px #50bab5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.patient main .inner .info .vital-signs .waveform .ecg-waveform {
+  width: 100%;
+  background-color: #6e0b1a;
+  padding: 2em 0;
+}
+
+.patient main .inner .info .vital-signs .waveform-btns,
+.patient main .inner .info .vital-signs .vital-signs-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 3rem;
 }
 
+.patient main .inner .info .vital-signs .waveform-btns button,
+.patient main .inner .info .vital-signs .vital-signs-btns button {
+  font-weight: bold;
+}
+
 .patient main .inner .info .vital-signs .vital-signs-box {
-  width: 459px;
-  height: 237px;
-  padding: 20px;
-  margin: 1.25rem 0px;
-  -webkit-box-shadow: 0px 2px 10px #a77171;
-          box-shadow: 0px 2px 10px #a77171;
+  width: 100%;
+  padding: 2em;
+  margin: 1em 0;
+  -webkit-box-shadow: 0px 2px 10px #50bab5;
+          box-shadow: 0px 2px 10px #50bab5;
 }
 
 .patient main .inner .info .vital-signs .vital-signs-box .vital-signs-items {
@@ -589,23 +590,22 @@
 }
 
 .patient main .inner .info .vital-signs .vital-signs-box .vital-signs-items .signs .box {
-  width: 55px;
-  height: 37px;
-  border-radius: 2.5%;
-  background-color: #f0e1e1;
-  border-bottom: 1px solid #a65858;
-  -webkit-box-shadow: 0px 1px 1px #a65858;
-          box-shadow: 0px 1px 1px #a65858;
-}
-
-.patient main .inner .info .vital-signs .vital-signs-btns {
-  width: 459px;
+  width: 4em;
+  height: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #89d1cd;
+  font-size: 1em;
+  border-bottom: 1px solid #151513;
+  -webkit-box-shadow: 0px 1px 1px #151513;
+          box-shadow: 0px 1px 1px #151513;
 }
 
 .patient .add-patient-modal {
@@ -635,11 +635,15 @@
 }
 
 .patient .add-patient-modal .inner form {
+  background: #6e0b1a;
+  -webkit-box-shadow: 0px 10px 14px #50bab5;
+          box-shadow: 0px 10px 14px #50bab5;
   width: 60%;
-  background: #f0e1e1;
   padding: 2em;
-  -webkit-box-shadow: 2px 2px 10px rgba(57, 4, 4, 0.5);
-          box-shadow: 2px 2px 10px rgba(57, 4, 4, 0.5);
+}
+
+.patient .add-patient-modal .inner form .form h6 {
+  color: #16a39c;
 }
 
 .patient .add-patient-modal .inner form .form .add-pic {
@@ -658,13 +662,14 @@
 .patient .add-patient-modal .inner form .form .add-pic img {
   width: 6em;
   padding: 0.5em;
-  border: 1px solid #de5d5d;
+  border: 2px solid #16a39c;
   background-color: #ffffff;
   margin-bottom: 0.5em;
 }
 
 .patient .add-patient-modal .inner form .form .add-pic button {
   font-size: 0.8em;
+  font-weight: bold;
 }
 
 .patient .add-patient-modal .inner form .form .add-pic button:hover {
@@ -690,10 +695,11 @@
   width: 100%;
   padding-left: 1em;
   margin-bottom: 0.5em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   border: none;
   outline: none;
   border-radius: 0.5em;
+  font-weight: bold;
 }
 
 .patient .add-patient-modal .inner form .form .add-option {
@@ -703,7 +709,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  border-top: 1px solid #a77171;
+  border-top: 1px solid #50bab5;
   padding-top: 1em;
 }
 

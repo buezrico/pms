@@ -5,21 +5,20 @@
   .details {
     .title {
       display: inline;
-      color: $dark;
+      color: $danger;
       font-weight: 900;
-      font-size: 0.7em;
+      font-size: 0.8em;
       padding-bottom: 0.3em;
-      border-bottom: 2px solid $danger;
     }
 
     p {
-      font-size: 0.7em;
+      font-size: 0.8em;
       color: $success;
       font-weight: bold;
     }
 
     small {
-      font-size: 0.7em;
+      font-size: 0.8em;
       color: $dark;
       font-weight: bold;
       display: flex;
@@ -32,11 +31,10 @@
     left: 0;
     height: 20%;
     width: 100%;
-    background: red;
     nav {
-      background-color: $danger;
+      background-color: $warning;
       padding: 0.3em 0;
-      color: $light;
+      color: $primary;
 
       .inner {
         display: flex;
@@ -46,8 +44,7 @@
           align-items: center;
 
           img {
-            width: 2em;
-            margin-right: 0.5em;
+            width: 8em;
           }
 
           p {
@@ -69,14 +66,14 @@
             display: flex;
             align-items: center;
             margin-right: 0.5em;
-            font-size: 0.7em;
+            font-size: 0.9em;
           }
         }
       }
     }
 
     .topbar {
-      background-color: $info;
+      background-color: $success;
       .inner {
         display: flex;
         justify-content: space-between;
@@ -86,7 +83,8 @@
           padding-left: 2em;
 
           p {
-            font-size: 0.7em;
+            font-size: 1em;
+            font-weight: bold;
             display: flex;
             align-items: flex-end;
             padding: 0.3em 1em;
@@ -102,7 +100,9 @@
         .add-patient-btn {
           button {
             font-size: 0.8em;
+            font-weight: bold;
             margin: 0.8em;
+            border: 2px solid $danger;
 
             &:hover {
               color: $light;
@@ -116,7 +116,7 @@
   aside {
     height: 100vh;
     width: 5%;
-    background-color: $warning;
+    background-color: $success;
     position: fixed;
     left: 0;
     top: 0;
@@ -149,9 +149,9 @@
         }
 
         i {
-          border: 1px solid $secondary;
+          border: 2px solid $danger;
           padding: 0.3em;
-          color: $secondary;
+          color: $danger;
           border-radius: 0.2em;
           cursor: pointer;
         }
@@ -171,39 +171,41 @@
         position: fixed;
         left: 10%;
         width: 30%;
-        border: 1px solid $primary;
+        border: 2px solid $danger;
 
         .search {
           padding: 0.5em 1em;
-          color: $success;
+          color: $danger;
           border-bottom: 2px solid $primary;
 
           p {
             text-decoration: underline;
-            font-size: 0.8em;
+            font-size: 1em;
           }
 
           select {
             height: 3em;
-            font-size: 0.7em;
+            font-size: 0.9em;
             padding: 0.5em;
-            color: $success;
+            color: $danger;
             background-color: $warning;
             outline: 0;
-            border: 1px solid $success;
+            border: 2px solid $danger;
+            font-weight: bold;
           }
 
           input {
             height: 3em;
-            font-size: 0.7em;
+            font-size: 0.9em;
             padding-left: 3em;
-            color: $success;
+            color: $danger;
             background-color: $warning;
             outline: 0;
-            border: 1px solid $success;
+            border: 2px solid $danger;
+            font-weight: bold;
 
             &::placeholder {
-              color: $success;
+              color: $danger;
             }
 
             &:focus {
@@ -213,8 +215,8 @@
           i {
             position: absolute;
             margin-left: 1em;
-            margin-top: 1em;
-            font-size: 0.7em;
+            margin-top: 1.5em;
+            font-size: 0.8em;
           }
         }
 
@@ -228,7 +230,7 @@
               position: relative;
 
               &:nth-child(1) {
-                border-bottom: 1px solid $dark;
+                border-bottom: 2px solid $danger;
                 background-color: $warning;
 
                 input {
@@ -237,21 +239,23 @@
 
                 p {
                   font-weight: bold;
+                  font-size: 0.9em;
                 }
               }
 
               &:nth-child(3) {
-                background-color: $danger;
+                background-color: $dark;
                 color: $light;
               }
 
               input {
-                font-size: 0.7em;
+                font-size: 0.9em;
                 height: 0.8em;
               }
 
               p {
-                font-size: 0.7em;
+                font-size: 0.8em;
+                font-weight: bold;
 
                 &:nth-child(2) {
                   position: absolute;
@@ -271,11 +275,12 @@
           align-items: center;
           justify-content: flex-end;
           padding: 0.5em;
-          border-top: 2px solid $primary;
-          border-bottom: 1px solid $primary;
+          border-top: 2px solid $danger;
+          border-bottom: 1px solid $danger;
 
           button {
-            font-size: 0.7em;
+            font-size: 0.8em;
+            font-weight: bold;
           }
         }
 
@@ -316,16 +321,18 @@
           justify-content: flex-end;
 
           .patient-link {
-            padding: 0.5em 0.4em;
+            padding: 0.5em 1em;
             cursor: pointer;
             color: $danger;
-            font-size: 0.7em;
+            font-size: 0.9em;
+            font-weight: bold;
+            background-color: transparent;
           }
 
           .patient-link:hover,
           .patient-active {
-            background-color: $danger;
-            color: $light;
+            border-bottom: 3px solid $info;
+            color: $info;
           }
         }
 
@@ -334,7 +341,8 @@
           justify-content: flex-end;
 
           .btn {
-            font-size: 0.7em;
+            font-size: 0.9em;
+            font-weight: bold;
 
             &:hover {
               color: $light;
@@ -344,33 +352,25 @@
 
         .patient-details {
           .profile {
+            display: flex;
+            justify-content: space-between;
             ul {
               display: grid;
               grid-template-columns: repeat(2, 1fr);
             }
-            display: flex;
-            justify-content: space-between;
 
             .profile-pic {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
+              padding-bottom: 2em;
 
               img {
-                border: 2px solid $primary;
-                // border-radius: 50%;
-                padding: 0.5em;
+                border: 3px dashed $info;
+                padding: 1em;
+                border-radius: 50%;
               }
             }
           }
 
-          .guardian {
-            ul {
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-            }
-          }
-
+          .guardian,
           .provider {
             ul {
               display: grid;
@@ -411,45 +411,47 @@
           display: none;
 
           h6 {
-            font-size: 16px;
+            font-size: 1em;
             font-weight: bold;
-            color: $secondary;
-            margin-bottom: 10px;
+            color: $danger;
+            margin-bottom: 1em;
           }
 
           p {
-            font-size: 16px;
-            font-weight: normal;
+            font-size: 0.9em;
+            font-weight: bold;
             color: $dark;
-            margin-bottom: 10px;
+            margin-bottom: 1em;
           }
 
           .waveform {
-            width: 606px;
-            height: 274px;
-            padding: 20px;
-            margin: 1.25rem 0px;
+            padding: 2em;
+            margin: 1em 0;
             box-shadow: 0px 1px 10px $success;
+            display: flex;
+            flex-direction: column;
             .ecg-waveform {
-              width: 566px;
-              height: 156px;
+              width: 100%;
               background-color: $danger;
-              padding: 20px 0px;
+              padding: 2em 0;
             }
           }
 
-          .waveform-btns {
-            width: 606px;
+          .waveform-btns,
+          .vital-signs-btns {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-bottom: 3rem;
+
+            button {
+              font-weight: bold;
+            }
           }
 
           .vital-signs-box {
-            width: 459px;
-            height: 237px;
-            padding: 20px;
-            margin: 1.25rem 0px;
+            width: 100%;
+            padding: 2em;
+            margin: 1em 0;
             box-shadow: 0px 2px 10px $success;
             .vital-signs-items {
               display: grid;
@@ -464,21 +466,18 @@
                 align-items: center;
                 flex-direction: column;
                 .box {
-                  width: 55px;
-                  height: 37px;
-                  border-radius: 2.5%;
+                  width: 4em;
+                  height: 3em;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                   background-color: $warning;
+                  font-size: 1em;
                   border-bottom: 1px solid $secondary;
                   box-shadow: 0px 1px 1px $secondary;
                 }
               }
             }
-          }
-
-          .vital-signs-btns {
-            width: 459px;
-            display: flex;
-            justify-content: space-between;
           }
         }
       }
@@ -492,7 +491,6 @@
     top: 0;
     left: -100%;
     z-index: 10;
-    // display: none;
     opacity: 0;
     transition: all 1s ease-in-out;
     padding: 5em;
@@ -503,12 +501,16 @@
       align-items: center;
       justify-content: center;
       form {
+        background: $danger;
+        box-shadow: 0px 10px 14px $success;
+
         width: 60%;
-        background: $warning;
         padding: 2em;
-        box-shadow: 2px 2px 10px rgba(57, 4, 4, 0.5);
 
         .form {
+          h6 {
+            color: $info;
+          }
           .add-pic {
             display: flex;
             flex-direction: column;
@@ -516,13 +518,14 @@
             img {
               width: 6em;
               padding: 0.5em;
-              border: 1px solid $primary;
+              border: 2px solid $info;
               background-color: $light;
               margin-bottom: 0.5em;
             }
 
             button {
               font-size: 0.8em;
+              font-weight: bold;
 
               &:hover {
                 color: $light;
@@ -547,10 +550,11 @@
                 width: 100%;
                 padding-left: 1em;
                 margin-bottom: 0.5em;
-                font-size: 0.8em;
+                font-size: 0.9em;
                 border: none;
                 outline: none;
                 border-radius: 0.5em;
+                font-weight: bold;
               }
             }
           }
@@ -574,7 +578,6 @@
   }
 
   .add-patient-toggle {
-    // display: block;
     left: 0;
     opacity: 1;
   }

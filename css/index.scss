@@ -2,21 +2,23 @@
 @import "../assets/fonts/Lato-Regular.ttf";
 
 header {
-  height: 100vh;
+  height: 103vh;
   background-color: $warning;
-  background-image: url("../assets/imgs/header-bg.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
   display: flex;
   flex-direction: column;
+  perspective: 1000px;
 
   nav {
     padding: 0.5em;
     justify-content: space-between;
+    align-items: center;
 
     .brand {
       z-index: 10;
+
+      img {
+        width: 10em;
+      }
       a {
         font-weight: bold;
       }
@@ -25,7 +27,8 @@ header {
       li {
         display: flex;
         a {
-          font-size: 0.8em !important;
+          font-weight: bold;
+          font-size: 0.9em !important;
           margin-left: 2em;
         }
 
@@ -56,22 +59,34 @@ header {
 
       .left {
         height: 50%;
-        width: 35%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        background: linear-gradient(
+          90deg,
+          rgba(240, 225, 225, 0.77) 65.07%,
+          rgba(240, 225, 225, 0.1463) 95.09%,
+          rgba(240, 225, 225, 0.77) 65.07%,
+          rgba(240, 225, 225, 0.1463) 95.09%
+        );
+        box-shadow: 0px 10px 14px rgba(166, 88, 88, 0.38);
+        padding: 3em 2em;
+        border-radius: 3em;
 
         p {
           font-weight: bold;
         }
 
         .title {
-          font-size: 1.8em;
+          font-size: 2.5em;
         }
 
         .btn {
           font-weight: bold;
           color: $light;
+          font-size: 1.5em;
           &:hover {
             background: transparent;
             color: $primary;
@@ -81,7 +96,7 @@ header {
 
       .right {
         height: 50%;
-        width: 35%;
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -96,30 +111,23 @@ header {
   }
 
   .login-modal {
-    height: 100vh;
-
-    width: 100%;
-    position: fixed;
+    transform: rotateX(65deg) scale(0.75) translateY(30px);
+    transform-origin: 0 0;
     visibility: hidden;
     opacity: 0;
-    transition: all 1s ease-in-out;
-    left: 0;
-    top: -100%;
+    transition: all 1s;
 
     .inner {
-      height: 90%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
 
       form {
-        background: linear-gradient(
-          180deg,
-          rgba(240, 225, 225, 0.77) 60.07%,
-          rgba(240, 225, 225, 0.1463) 90.09%
-        );
+        background: linear-gradient(180deg, rgba(240, 225, 225, 0.77) 60.07%);
         box-shadow: 0px 10px 14px rgba(166, 88, 88, 0.38);
-        padding: 3em 2em;
+        padding: 5em 5em;
+        border-radius: 2em;
 
         .form {
           display: flex;
@@ -131,18 +139,18 @@ header {
             background: transparent;
             padding: 0.5em;
             outline: none;
-            border: 1px solid $success;
+            border: 2px solid $info;
             color: $secondary;
-            // border-radius: 0.5em;
+            border-radius: 0.5em;
             transition: all 0.15s ease-in-out;
 
             &::placeholder {
               color: $secondary;
-              font-size: 0.7em;
+              font-size: 0.8em;
             }
 
             &:focus {
-              border: 2px solid $danger;
+              border: 2px solid $primary;
             }
 
             &:nth-child(3) {
@@ -152,18 +160,18 @@ header {
 
           .password-toggle {
             position: absolute;
-            margin-top: 8em;
+            margin-top: 8.8em;
             margin-left: 10em;
             cursor: pointer;
           }
 
           small {
-            font-size: 0.7em;
+            font-size: 0.8em;
             cursor: pointer;
           }
 
           p {
-            font-size: 0.7em;
+            font-size: 0.8em;
             font-weight: bold;
             i {
               cursor: pointer;
@@ -171,7 +179,7 @@ header {
           }
 
           .btn {
-            font-size: 0.7em;
+            font-size: 0.9em;
           }
         }
       }
@@ -179,9 +187,10 @@ header {
   }
 
   .login-modal-toggle {
+    transform: rotateX(0) scale(1) translateY(0);
     visibility: visible;
+    // display: block;
     opacity: 1;
-    top: 0;
   }
 }
 
