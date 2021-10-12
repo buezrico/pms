@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Details</title>
+
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/patient.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="patient">
+      
+
+      <div class="add-patient-modal details">
+        <div class="inner">
+          <form action="">
+            <div class="form">
+              <div class="add-pic mb-2">
+                <img src="/assets/imgs/avatar.png" alt="" />
+                <button class="btn btn-outline-success rounded px-3">
+                  Add Photo
+                </button>
+              </div>
+
+              <h6 class="title">PROFILE</h6>
+              <ul class="add-patient">
+                <li>
+                  <p>NAME</p>
+                  <input type="text" placeholder="Full Name" />
+                </li>
+                <li>
+                  <p>DATE OF BIRTH</p>
+                  <input type="date" />
+                </li>
+
+                <li>
+                  <p>GENDER</p>
+                  <select name="" id="">
+                    <option value="0" default>Choose gender</option>
+                    <option value="2">Male</option>
+                    <option value="3">Female</option>
+                  </select>
+                </li>
+
+                <li>
+                  <p>MARITAL STATUS</p>
+                  <select name="" id="">
+                    <option value="0" default>Choose status</option>
+                    <option value="2">Single</option>
+                    <option value="3">Married</option>
+                    <option value="4">Seperated</option>
+                  </select>
+                </li>
+
+                <li>
+                  <p>ADDRESS</p>
+                  <input type="text" placeholder="Type in the home address" />
+                </li>
+
+                <li>
+                  <p>PHONE</p>
+                  <input type="tel" placeholder="Type in the phone number" />
+                </li>
+              </ul>
+
+              <h6 class="title">GUARDIAN</h6>
+              <ul class="add-patient">
+                <li>
+                  <p>NAME</p>
+                  <input type="text" placeholder="Full Name" />
+                </li>
+                
+  
+                <li>
+                  <p>RELATIONSHIP</p>
+                  <select name="" id="">
+                    <option value="0" default>Relationship with guardian</option>
+                    <option value="2">Father</option>
+                    <option value="3">Mother</option>
+                    <option value="4">Brother</option>
+                    <option value="5">Sister</option>
+                    <option value="6">Uncle</option>
+                    <option value="7">Aunty</option>
+                    <option value="8">Friend</option>
+                  </select>
+                </li>
+  
+                <li>
+                  <p>ADDRESS</p>
+                  <input type="text" placeholder="Type in the home address" />
+                </li>
+  
+                <li>
+                  <p>PHONE</p>
+                  <input type="tel" placeholder="Type in the phone number" />
+                </li>
+              </ul>
+
+              <h6 class="title">PROVIDER</h6>
+              <ul class="add-patient">
+                <li>
+                  <p>NAME</p>
+                  <input type="text" placeholder="Full Name" />
+                </li>
+                
+  
+  
+                <li>
+                  <p>PHONE</p>
+                  <input type="tel" placeholder="Type in the phone number" />
+                </li>
+
+                <li>
+                  <p>ADDRESS</p>
+                  <input type="text" placeholder="Type in the home address" />
+                </li>
+  
+              </ul>
+              <h6 class="title">ALLERGIES</h6>
+              <ul class="add-patient">
+                <li>
+                  <p>NAME</p>
+                  <input type="text" placeholder="Full Name" />
+                </li>
+                
+  
+  
+                <li>
+                  <p>SEVERITY</p>
+                  <select name="" id="">
+                    <option value="0" default>Choose severity</option>
+                    <option value="2">Severe</option>
+                    <option value="3">Moderate</option>
+                    <option value="4">Minor</option>
+                  </select>
+                </li>
+
+                <li>
+                  <p>REACTION</p>
+                  <input type="text" placeholder="Reaction to allergy" />
+                </li>
+
+              </ul>
+
+              <div class="add-option">
+                  <button class="btn btn-success rounded-pill px-3 text-light"><i class="fas fa-plus"></i>Add</button>
+                  <button class="btn btn-outline-success rounded-pill px-3"><i class="fas fa-trash-alt"></i>Delete</button>
+              </div>
+
+              <h6 class="title">IMMUNIZATIONS</h6>
+              <ul class="add-patient">
+                <li>
+                  <p>NAME</p>
+                  <input type="text" placeholder="Full Name" />
+                </li>
+                
+                <li>
+                  <p>TYPE AND DOSE</p>
+                  <input type="text" placeholder="Type and Dose of Immunization" />
+                </li>
+
+                <li>
+                  <p>VALUE/UNIT</p>
+                  <input type="text" placeholder="Measurement of Immunization" />
+                </li>
+                <li>
+                  <p>INSTRUCTION</p>
+                  <input type="text" placeholder="How to use" />
+                </li>
+                <li>
+                  <p>DUE DATE</p>
+                  <input type="date" />
+                </li>
+
+              </ul>
+
+              <div class="add-option">
+                  <button class="btn btn-success rounded-pill px-3 text-light"><i class="fas fa-plus"></i>Add</button>
+                  <button class="btn btn-outline-success rounded-pill px-3"><i class="fas fa-trash-alt"></i>Delete</button>
+              </div>
+
+              <h6 class="title">APPOINTMENTS</h6>
+              <ul class="add-patient">
+                <li>
+                  <p>NAME</p>
+                  <input type="text" placeholder="Full Name" />
+                </li>
+                <li>
+                  <p>PLANNED DATE</p>
+                  <input type="date" />
+                </li>
+                
+                <li>
+                  <p>INSTRUCTION</p>
+                  <input type="text" placeholder="Details of Appointment" />
+                </li>
+
+              </ul>
+
+              <div class="add-option">
+                  <button class="btn btn-success rounded-pill px-3 text-light"><i class="fas fa-plus"></i>Add</button>
+                  <button class="btn btn-outline-success rounded-pill px-3"><i class="fas fa-trash-alt"></i>Delete</button>
+              </div>
+
+              <div class="submit-btn text-center m-5 d-flex">
+                  <button class="btn btn-info px-5 fs-6 mx-2 rounded-pill text-light fw-bold">Submit</button>
+                  <button class="btn btn-outline-info px-5 fs-6 rounded-pill  fw-bold">Cancel</button>
+              </div>
+            </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <script src="/js/patient.js"></script>
+  </body>
+</html>

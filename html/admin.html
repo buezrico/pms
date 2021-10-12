@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/admin.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="admin">
+      <div class="top">
+        <nav class="nav">
+          <div class="container inner">
+            <div class="brand">
+              <a href="/index.html">
+                <img src="/assets/imgs/logo.png" alt="logo"
+              /></a>
+            </div>
+
+            <div class="user-profile">
+              <i class="fas fa-user-circle"></i>
+              <p class="fw-bold">Anthony</p>
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </nav>
+
+        <div class="topbar">
+          <div class="container inner">
+            <div class="links text-danger">
+              <p>ADMIN DASHBOARD</p>
+              <!-- <p>PATIENT RECORD</p> -->
+            </div>
+            <div class="add-patient-btn">
+              <button
+                onclick="showNewPatientModal()"
+                class="btn btn-outline-danger rounded-pill px-4 new-patient-btn"
+              >
+                <a href="/index.html">LOGOUT</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="dashboard p-5">
+        <div class="welcome">
+          <div
+            class="
+              welcome-profile
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <h3 class="fw-bold text-danger">
+              Welcome Nurse <span class="text-info">Precious</span>, What would
+              you like to do?
+            </h3>
+            <div
+              class="
+                welcome-img
+                d-flex-column
+                justify-content-between
+                align-items-center
+              "
+            >
+              <img src="/assets/imgs/profile-pic.png" alt="" />
+              <p class="mt-3 fw-bold text-center">NURSE PRECIOUS</p>
+            </div>
+          </div>
+
+          <div class="tasks mt-5">
+            <ul>
+              <button class="bg-info text-danger p-3 btn fw-bold">
+                <a href="/html/patient.html"><p>View Patients</p></a>
+              </button>
+              <button class="bg-info text-danger p-3 btn fw-bold">
+                <a href="/html/addPatient.html"><p>Add New Patient</p></a>
+              </button>
+              <button class="bg-info text-danger p-3 btn fw-bold">
+                <a href="/index.html"><p>Log Out</p></a>
+              </button>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </header>
+  </body>
+</html>

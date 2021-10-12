@@ -1,0 +1,176 @@
+.admin .details .title {
+  display: inline;
+  color: #6e0b1a;
+  font-weight: 900;
+  font-size: 0.8em;
+  padding-bottom: 0.3em;
+}
+
+.admin .details p {
+  font-size: 0.8em;
+  color: #50bab5;
+  font-weight: bold;
+}
+
+.admin .details small {
+  font-size: 0.8em;
+  color: #950b15;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin .top {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 20%;
+  width: 100%;
+}
+
+.admin .top nav {
+  background-color: #89d1cd;
+  padding: 0.3em 0;
+  color: #bc0a0f;
+}
+
+.admin .top nav .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.admin .top nav .inner .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin .top nav .inner .brand img {
+  width: 8em;
+}
+
+.admin .top nav .inner .brand p {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.admin .top nav .inner .user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.admin .top nav .inner .user-profile .fa-user-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.5em;
+}
+
+.admin .top nav .inner .user-profile p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.5em;
+  font-size: 0.9em;
+}
+
+.admin .top .topbar {
+  background-color: #50bab5;
+}
+
+.admin .top .topbar .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.admin .top .topbar .inner .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2em;
+}
+
+.admin .top .topbar .inner .links p {
+  font-size: 1em;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0.3em 1em;
+  cursor: pointer;
+}
+
+.admin .top .topbar .inner .links p:nth-child(1) {
+  margin-right: 3em;
+  border-bottom: 2px solid #6e0b1a;
+}
+
+.admin .top .topbar .inner .add-patient-btn button {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0.8em;
+  border: 2px solid #6e0b1a;
+}
+
+.admin .top .topbar .inner .add-patient-btn button:hover {
+  color: #ffffff;
+}
+
+.admin .dashboard .welcome {
+  width: 90%;
+}
+
+.admin .dashboard .welcome .welcome-profile img {
+  padding: 1em;
+  border-radius: 50%;
+  border: 2px solid #950b15;
+}
+
+.admin .dashboard .welcome .tasks {
+  width: 60%;
+}
+
+.admin .dashboard .welcome .tasks ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5em;
+}
+
+.admin .dashboard .welcome .tasks ul button a {
+  color: #950b15;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.admin .dashboard .welcome .tasks ul button:hover {
+  background-color: #6e0b1a;
+  color: #ffffff;
+}
+/*# sourceMappingURL=admin.css.map */

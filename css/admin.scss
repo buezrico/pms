@@ -1,0 +1,149 @@
+@import "./variables";
+@import "../assets/fonts/Lato-Regular.ttf";
+
+.admin {
+  .details {
+    .title {
+      display: inline;
+      color: $danger;
+      font-weight: 900;
+      font-size: 0.8em;
+      padding-bottom: 0.3em;
+    }
+
+    p {
+      font-size: 0.8em;
+      color: $success;
+      font-weight: bold;
+    }
+
+    small {
+      font-size: 0.8em;
+      color: $dark;
+      font-weight: bold;
+      display: flex;
+    }
+  }
+  .top {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    nav {
+      background-color: $warning;
+      padding: 0.3em 0;
+      color: $primary;
+
+      .inner {
+        display: flex;
+        justify-content: space-between;
+        .brand {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 8em;
+          }
+
+          p {
+            font-size: 0.8em;
+            font-weight: bold;
+          }
+        }
+
+        .user-profile {
+          display: flex;
+          cursor: pointer;
+
+          .fa-user-circle {
+            display: flex;
+            align-items: center;
+            margin-right: 0.5em;
+          }
+          p {
+            display: flex;
+            align-items: center;
+            margin-right: 0.5em;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+
+    .topbar {
+      background-color: $success;
+      .inner {
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+          display: flex;
+          padding-left: 2em;
+
+          p {
+            font-size: 1em;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+            padding: 0.3em 1em;
+            cursor: pointer;
+
+            &:nth-child(1) {
+              margin-right: 3em;
+              border-bottom: 2px solid $danger;
+            }
+          }
+        }
+
+        .add-patient-btn {
+          button {
+            font-size: 0.8em;
+            font-weight: bold;
+            margin: 0.8em;
+            border: 2px solid $danger;
+
+            &:hover {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dashboard {
+    .welcome {
+      width: 90%;
+
+      .welcome-profile {
+        img {
+          padding: 1em;
+          border-radius: 50%;
+          border: 2px solid $dark;
+        }
+      }
+      .tasks {
+        width: 60%;
+        ul {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 5em;
+
+          button {
+            a {
+              color: $dark;
+              font-weight: bold;
+              font-size: 1em;
+            }
+            &:hover {
+              background-color: $danger;
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
